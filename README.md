@@ -9,8 +9,11 @@ INSTALLATION
 ============
 For now, just
     1. Clone this repository
+
     2. Go into chrome
+
     3. Go to "chrome://extensions" -> Load Unpacked Extension -> select this dir
+
     4. Celebrate
 
 CHANGELOG
