@@ -19,8 +19,15 @@ var i = 0;
  globstr=String(req.data);
  });
  */
+var TIME = 30;
 var curval = 0;
 cnt = 0;
+var bad = function(d) {
+    if (d.indexOf("wikipedia.org") != -1) {return false;}
+    if (d.indexOf(".edu") != -1) {return false;}
+    if (d.indexOf("mail") != -1) {return false;}
+    return true;
+};
 window.setInterval(function() {
 	cnt++;
 
@@ -51,6 +58,10 @@ window.setInterval(function() {
 							tmp++;
 							hdb[domain] = tmp;
 							curval = tmp;
+
+                                                        if (bad(domain) && tmp > 0 && tmp%TIME == 0) {
+                                                            chrome.windows.create({"url" : "richardoncow.jpg"});
+                                                        }
 						}
 					}
 					if (cnt % 10 == 0) {
