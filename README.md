@@ -5,6 +5,14 @@ This is an ~~activity~~ chikin tracker extension for Chromium. It logs Web usage
 
 *NOTE* This extension just works and lacks a lot of functionality and UI, as it is still under (slow?) development. Contributions are more than welcome!
 
+INSTALLATION
+============
+For now, just
+    1. Clone this repository
+    2. Go into chrome
+    3. Go to "chrome://extensions" -> Load Unpacked Extension -> select this dir
+    4. Celebrate
+
 CHANGELOG
 ---------
 
